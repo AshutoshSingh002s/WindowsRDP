@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Download NGROK - NSSM.
       run: |
-        Invoke-WebRequest https://github.com/TheDarkMythos/Ngrok-Exe/blob/master/ngrok.exe?raw=true -OutFile ngrok.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/ngrok.exe -OutFile ngrok.exe
         Invoke-WebRequest https://raw.githubusercontent.com/cudsav/WindowsRDP/main/Files/nssm.exe -OutFile nssm.exe
         
     - name: Copy NGROK - NSSM to System32.
