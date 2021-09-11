@@ -12,7 +12,7 @@ jobs:
     - name: Download NGROK - NSSM.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/cudsav/WindowsRDP/main/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/AshutoshSingh002s/Ngrock.exe/master/nssm.exe -OutFile nssm.exe
         
     - name: Copy NGROK - NSSM to System32.
       run: | 
@@ -26,9 +26,9 @@ jobs:
         
     - name: Download BATCH NGROK_AP - NGROK_CHECK - NGROK_LOOP.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/cudsav/WindowsRDP/main/Files/NGROK_AP.bat -OutFile NGROK_AP.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/cudsav/WindowsRDP/main/Files/NGROK_CHECK.bat -OutFile NGROK_CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/cudsav/WindowsRDP/main/Files/NGROK_LOOP.bat -OutFile NGROK_LOOP.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/AshutoshSingh002s/Ngrock.exe/master/NGROK_AP.bat -OutFile NGROK_AP.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/AshutoshSingh002s/Ngrock.exe/master/NGROK_CHECK.bat -OutFile NGROK_CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/AshutoshSingh002s/Ngrock.exe/master/NGROK_LOOP.bat -OutFile NGROK_LOOP.bat
         
     - name: Create a NGROK .yml file.
       run: start NGROK_AP.bat
