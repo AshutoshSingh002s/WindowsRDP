@@ -22,7 +22,7 @@ jobs:
     - name: Connect to NGROK account use NGROK_AUTH_TOKEN.
       run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+        NGROK_AUTH_TOKEN: ${ secrets.NGROK_AUTH_TOKEN }
         
     - name: Download BATCH NGROK_AP - NGROK_CHECK - NGROK_LOOP.
       run: |
